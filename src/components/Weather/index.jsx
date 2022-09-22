@@ -11,7 +11,7 @@ import {
 
 import PlaceCard from '../PlaceCard';
 
-const apiKey = '5069e30ea7ea1173a70399b8142ee882';
+const apiKey = import.meta.env.VITE_API_KEY;
 
 export default function Weather({ theme }) {
   const [searchedLocation, setSearchedLocation] = useState('');
